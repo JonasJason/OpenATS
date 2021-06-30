@@ -4,6 +4,9 @@ a = "Welcome to OpenATS";
 console.log(a);
 
 
+//////////////////////////////////////////////////////////////
+
+
 // Reading the PDF input
 
 function readPDF(file) {
