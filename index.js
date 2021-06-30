@@ -26,3 +26,7 @@ function writePDF(file) {
     var skills = [];
 
 }
+
+// I'm guessing we're going to have to look for bolded statements or words with larger fonts
+// than others in order to separate and parse the information, then add it to the correct []
+
