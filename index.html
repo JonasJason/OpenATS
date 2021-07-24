@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
 </head>
-<body>
-    
+<body style="background-color:#FFFADF">
+    <div class ="container">
+        <div class="head">
+            <h1>OpenATS</h1>
+        </div>
+        <div class="filePane">
+            <img src="cloudUpload.svg" width="325" height="325" alt="upload a file">
+            <h2>Drag & Drop resume</h2>
+            <h2>or</h2>
+            <form action="/review_resume_page.html">
+                <input type="file" id="resume" name="filename">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
 </body>
+<footer>
+    <p>Want to support the project? Contribute some code to the GitHub page.</p>
+</footer>
 </html>
