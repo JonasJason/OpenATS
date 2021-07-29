@@ -6,16 +6,16 @@ console.log(a);
 
 //////////////////////////////////////////////////////////////
 
-
 // Reading the PDF input
-
-function readPDF(file) {
+let resumeFile = document.getElementById('resume');
+function readPDF(resumeFile) {
 
     const reader = new FileReader();
     reader.addEventListener('load', (event) => {
       pdf.src = event.target.result;
     });
-    reader.readAsArrayBuffer(file);
+    reader.readAsArrayBuffer(resumeFile);
+    console.log(reader.result);
   }
 
 

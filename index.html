@@ -8,18 +8,31 @@
     <title>Main Page</title>
 </head>
 <body style="background-color:#FFFADF">
+    <script src="index.js"></script>
     <div class ="container">
         <div class="head">
             <h1>OpenATS</h1>
         </div>
         <div class="filePane">
-            <img src="cloudUpload.svg" width="325" height="325" alt="upload a file">
+            <img src="images/cloudUpload.svg" width="325" height="325" alt="upload a file">
             <h2>Drag & Drop resume</h2>
             <h2>or</h2>
-            <form action="/reviewPage.html">
-                <input type="file" id="resume" name="filename">
-                <input type="submit">
+            <form>
+                <input id="resume" type="file" accept=".pdf" id="resume" name="filename">
+                <button onclick="readPDF();">Submit</button>
+                <!--
+                <script>
+                    const file = event.target.files[0];
+                    if(!file.type.match('pdf.*')) {
+                        status.textContent = "Wrong file type"
+                        return;
+                    }
+                </script>
+                -->
             </form>
+        </div>
+        <!--possibly need to use pdf.js to preview the pdf and/or be able to work with it-->
+        <div class="file-preview" id="filepreview">
         </div>
     </div>
 </body>
